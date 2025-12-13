@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aula1"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-18 01:21:17 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0xODsiMTE6MTQ6MzggIjsyNTE3"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0xODsiMDE6MjE6MTcgIjsxOzI2MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <output expression="&quot;Quer ver um truque m&#225;gico? Digite um n&#250;mero:&quot;" newline="True"/>
+            <input variable="numero"/>
+            <comment text="MAGIA acontecendo"/>
+            <output expression="&quot;Alacazin!!! Voc&#234; digitou o seguinte n&#250;mero:&quot;&amp;numero" newline="True"/>
+            <output expression="&quot;MAGIA!&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="parte2" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <while expression="true">
+                <output expression="&quot;Digite um Numero:&quot;" newline="True"/>
+                <input variable="numero"/>
+                <output expression="&quot;Voc&#234; digitou o n&#250;mero:&quot;&amp;numero" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

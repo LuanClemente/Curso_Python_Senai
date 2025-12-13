@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="festa"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-25 08:44:45 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDg6MjM6NTEgIjsyNTE2"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDg6NDQ6NDUgIjsxOzI2MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bem vindo a festa! Informe a sua idade:&quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade&gt;=18 and idade&lt;=30">
+                <then>
+                    <output expression="&quot;Pode entrar e beba sem responsabilidade!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o pode entrar, vaza!&quot;" newline="True"/>
+                </else>
+            </if>
+            <call expression="main"/>
+        </body>
+    </function>
+</flowgorithm>

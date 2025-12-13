@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="idade e cubo"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-25 01:52:05 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDE6MjM6MzkgIjsyNTE1"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDE6NTI6MDUgIjsxOzI2MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade1, idade2, soma, cubo, escolha" type="Integer" array="False" size=""/>
+            <declare name="pessoa1, pessoa2" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu nome e depois a sua idade: &quot;" newline="True"/>
+            <input variable="pessoa1"/>
+            <input variable="idade1"/>
+            <output expression="&quot;Agora o segundo usu&#225;rio digite seu nome e depois a idade: &quot;" newline="True"/>
+            <input variable="pessoa2"/>
+            <input variable="idade2"/>
+            <output expression="&quot;Processando...&quot;" newline="True"/>
+            <output expression="&quot;O nome do 1&#176; usu&#225;rio &#233; &quot; &amp; pessoa1 &amp; &quot; e sua idade &#233; de &quot; &amp; idade1 &amp; &quot; anos.&quot;" newline="True"/>
+            <output expression="&quot;O nome do 2&#176; usu&#225;rio &#233; &quot; &amp; pessoa2 &amp; &quot; e sua idade &#233; de &quot; &amp; idade2 &amp; &quot; anos.&quot;" newline="True"/>
+            <if expression="idade1 &gt; idade2">
+                <then>
+                    <output expression="&quot;O(a) &quot; &amp; pessoa1 &amp; &quot; &#233; mais velho(a) que o(a) &quot; &amp; pessoa2 &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O(a) &quot; &amp; pessoa2 &amp; &quot; &#233; mais velho(a) que o(a) &quot; &amp; pessoa1 &amp; &quot;.&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="soma" expression="idade1 + idade2"/>
+            <output expression="&quot;A soma das idades s&#227;o de &quot; &amp; soma &amp; &quot; anos.&quot;" newline="True"/>
+            <output expression="&quot;Quer fazer um calculo r&#225;pido? Digite 1 para sim e 2 para n&#227;o.&quot;" newline="True"/>
+            <input variable="escolha"/>
+            <while expression="escolha == 2">
+                <output expression="&quot;Eu acho que voc&#234; quer sim fazer um calculo massa s&#243; n&#227;o tem certeza ainda, por isso vou perguntar de novo... Quer fazer um calculo r&#225;pido? Digite 1 para sim ou 1 para com certeza!&quot;" newline="True"/>
+                <input variable="escolha"/>
+            </while>
+            <output expression="&quot;Escolha um valor de 1 a 10000000000: &quot;" newline="True"/>
+            <input variable="cubo"/>
+            <output expression="&quot;Sabia que voc&#234; queria!!! Vamos l&#225;...&quot;" newline="True"/>
+            <assign variable="soma" expression="cubo^3"/>
+            <output expression="&quot;O valor ao cubo do n&#250;mero que voc&#234; escolheu &#233; &quot; &amp; soma &amp; &quot;. Interessante n&#233;? Ou talvez nem tanto assim...&quot;" newline="True"/>
+            <call expression="main"/>
+        </body>
+    </function>
+</flowgorithm>

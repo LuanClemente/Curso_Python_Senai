@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="loop"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-18 01:33:15 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0xODsiMDE6MjQ6NTggIjsyNTE5"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0xODsiMDE6MzM6MTUgIjsxOzI2MjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <while expression="true">
+                <output expression="&quot;Digite um n&#250;mero:&quot;" newline="True"/>
+                <input variable="numero"/>
+                <output expression="&quot;Voc&#234; digitou o n&#250;mero:&quot;&amp;numero" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

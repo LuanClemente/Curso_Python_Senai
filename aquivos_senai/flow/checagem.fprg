@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="checagem"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-25 11:48:30 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMTA6Mjg6MzYgIjsyNTE3"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMTE6NDg6MzAgIjszOzI2MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, media, soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite sua primeira nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <while expression="!(n1 &gt;= 0 and n1 &lt;= 10)">
+                <output expression="&quot;A nota tem que ser entre 0 e 10, tente novamente.&quot;" newline="True"/>
+                <input variable="n1"/>
+            </while>
+            <output expression="&quot;Digite sua segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <while expression="!(n2 &gt;= 0 and n2 &lt;= 10)">
+                <output expression="&quot;N&#227;o aprendeu ainda? A nota tem que ser entre 0 e 10, presta aten&#231;&#227;o ai!&quot;" newline="True"/>
+                <input variable="n2"/>
+            </while>
+            <output expression="&quot;Digite sua terceira nota: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <while expression="!(n3 &gt;= 0 and n3 &lt;= 10)">
+                <output expression="&quot;N&#227;o aprendeu ainda? Voc&#234; &#233; burro heim! A nota tem que ser entre 0 e 10. Sabe 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10... Pelo amor de Deus!&quot;" newline="True"/>
+                <input variable="n3"/>
+            </while>
+            <output expression="&quot;A Soma de suas notas &#233;: &quot; &amp; n1 + n2 + n3" newline="True"/>
+            <assign variable="soma" expression="n1 + n2 + n3"/>
+            <output expression="&quot;A m&#233;dia &#233;: &quot; &amp; (n1 + n2 + n3) / 3" newline="True"/>
+            <assign variable="media" expression="soma / 3"/>
+            <if expression="media &gt;= 7.0">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; est&#225; aprovado! N&#227;o fez mas que sua obriga&#231;&#227;o!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o passou, te falta inteligencia!&quot;" newline="True"/>
+                </else>
+            </if>
+            <call expression="main"/>
+        </body>
+    </function>
+</flowgorithm>

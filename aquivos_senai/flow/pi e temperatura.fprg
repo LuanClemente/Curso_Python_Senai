@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pi e temperatura"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-25 02:28:35 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDI6MTA6MzYgIjsyNTA5"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDI6Mjg6MzUgIjsxOzI2MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio, area, temperatura" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o valor correspondente ao raio do circulo, irei calcular a &#225;rea do mesmo: &quot;" newline="True"/>
+            <input variable="raio"/>
+            <assign variable="area" expression="3.14*raio^2"/>
+            <output expression="&quot;A &#225;rea &#233;: &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Legal, n&#227;o &#233;? Agora que falamos de raio... Que tal falarmos de RAIO solar? Qual a temperatura para voc&#234; agora em Celsius?&quot;" newline="True"/>
+            <input variable="temperatura"/>
+            <output expression="&quot;Se para voc&#234; a temperatura em Celcius &#233; &quot; &amp; temperatura &amp; &quot; em Kelvin seria &quot; &amp; temperatura+273.15 &amp; &quot; e em Fahrenheit vai ser &quot; &amp; (temperatura*1.8)+32 &amp; &quot; espero ter te agregado conhecimento!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
