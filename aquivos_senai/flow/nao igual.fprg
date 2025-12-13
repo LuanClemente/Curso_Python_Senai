@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nao igual"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-25 08:58:42 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDg6NTQ6MTcgIjsyNTIy"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0NDQ7MjAyNS0xMC0yNTsiMDg6NTg6NDIgIjsxOzI2MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <if expression="!(n1==3)">
+                <then>
+                    <output expression="n1&amp;&quot; &#201; igual a 3&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n1&amp;&quot; &#201; difente de 3&quot;" newline="True"/>
+                </else>
+            </if>
+            <call expression="main"/>
+        </body>
+    </function>
+</flowgorithm>
